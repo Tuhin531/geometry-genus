@@ -1,3 +1,4 @@
+
 document.getElementById('triangle-calculate').addEventListener('click', function(){
     const baseInput = document.getElementById('base-input');
     const BaseInputString = baseInput.value;
@@ -12,12 +13,14 @@ document.getElementById('triangle-calculate').addEventListener('click', function
     heightInput.value = '';
 
     const calculateValue = 0.5 * NewBaseInput * NewHeightInput;
-
+    
    
     const finalOutput= document.getElementById('calculate-value-show');
     const finalOutputString = finalOutput.value;
     const NewFinalOutput = parseFloat(finalOutputString);
     // console.log(NewFinalOutput);
     finalOutput.innerText = calculateValue;
+   
 
 })
+

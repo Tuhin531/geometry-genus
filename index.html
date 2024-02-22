@@ -50,16 +50,16 @@
                                     <p class="card-text text-center">Area (A) = W x l</p>
                                     <div class="d-flex gap-4">
                                         <div>
-                                            <input class="form-control form-control-lg" type="text" placeholder="width">
+                                            <input id="width-input" class="form-control form-control-lg" type="text" placeholder="width">
 
                                         </div>
                                         <div>
-                                            <input class="form-control form-control-lg" type="text"
+                                            <input id="length-input" class="form-control form-control-lg" type="text"
                                                 placeholder="length">
                                         </div>
                                     </div>
                                     <div class=" text-center">
-                                        <button type="button" class="btn btn-primary btn-lg  m-4 ">Calculate</button>
+                                        <button id="rectangle-calculate" type="button" class="btn btn-primary btn-lg  m-4 ">Calculate</button>
 
                                     </div>
                                 </div>
@@ -166,9 +166,9 @@
                         <div class="card ">
                             <div class="card-body mx-auto">
                                 <h5 class="card-title text-center "> <u> Area Calculate</u></h5>
-                                <div id="calculate-value-show">
+                                 <h6 >Triangle Value: <span id="calculate-value-show"></span> </h6> 
+                                 <h6 >Rectangle Value: <span id="calculate-value-rectangle"></span> </h6> 
 
-                                </div>
 
                             </div>
                         </div>
@@ -188,7 +188,7 @@
 
 
 
-
+      <script src="js/rectangle.js"></script>
       <script src="js/triangle.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
